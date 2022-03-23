@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderAndCargoManagement.DataAccess\OrderAndCargoManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\OrderAndCargoManagement.Entities\OrderAndCargoManagement.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
