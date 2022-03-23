@@ -86,7 +86,10 @@ namespace OrderAndCargoManagement.API.Controllers
                 {
                     return BadRequest();
                 }
-                
+                await _yurticiCargoService.CanceleOrder(id);
+
+                return Ok();
+
             }
             return NotFound("Order was not found");
         }

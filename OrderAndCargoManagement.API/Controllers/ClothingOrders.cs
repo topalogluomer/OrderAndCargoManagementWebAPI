@@ -83,10 +83,10 @@ namespace OrderAndCargoManagement.API.Controllers
                 ResultStatus status = ResultStatus.Accepted;
                 if (status == ResultStatus.Pending)
                 {
-                    await _arasCargoService.CanceleOrder(id);
-                    return Ok();
+                    return BadRequest();
                 }
-               
+                await _arasCargoService.CanceleOrder(id);
+                return Ok();
             }
             return NotFound("Order was not found");
         }
